@@ -1,0 +1,275 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A49174ED-04EE-4592-B8D0-EBD3911EA548}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Turismo</RootNamespace>
+    <AssemblyName>Turismo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44396</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrap-grid.css" />
+    <Content Include="assets\css\bootstrap-grid.min.css" />
+    <Content Include="assets\css\bootstrap-reboot.css" />
+    <Content Include="assets\css\bootstrap-reboot.min.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\img\3d.jpeg" />
+    <Content Include="assets\img\about-me-img.jpg" />
+    <Content Include="assets\img\about-me-img1.png" />
+    <Content Include="assets\img\about-me-img2.png" />
+    <Content Include="assets\img\about-me-img3.png" />
+    <Content Include="assets\img\activity-img1.png" />
+    <Content Include="assets\img\activity-img2.png" />
+    <Content Include="assets\img\activity-img3.png" />
+    <Content Include="assets\img\banner-img.jpg" />
+    <Content Include="assets\img\Berlin.mp4" />
+    <Content Include="assets\img\camera-bg.jpg" />
+    <Content Include="assets\img\camera-bg.png" />
+    <Content Include="assets\img\carhuamayo-img1.jpg" />
+    <Content Include="assets\img\carhuamayo-img2.jpg" />
+    <Content Include="assets\img\carhuamayo-img3.jpg" />
+    <Content Include="assets\img\carhuamayo-img4.jpg" />
+    <Content Include="assets\img\carhuamayo-img5.jpg" />
+    <Content Include="assets\img\carhuamayo-junin.jpg" />
+    <Content Include="assets\img\cerrito.jpg" />
+    <Content Include="assets\img\detalle1.jpg" />
+    <Content Include="assets\img\detalle2.jpg" />
+    <Content Include="assets\img\detalle3.jpg" />
+    <Content Include="assets\img\double-right.svg" />
+    <Content Include="assets\img\facebook.png" />
+    <Content Include="assets\img\girl2.jpg" />
+    <Content Include="assets\img\girl3.jpg" />
+    <Content Include="assets\img\google-plus.png" />
+    <Content Include="assets\img\heart.png" />
+    <Content Include="assets\img\hospe2.jpg" />
+    <Content Include="assets\img\hospe3.jpg" />
+    <Content Include="assets\img\hospe4.jpg" />
+    <Content Include="assets\img\hospe6.jpg" />
+    <Content Include="assets\img\Huancayo.1.jpg" />
+    <Content Include="assets\img\huancayo1.jpeg" />
+    <Content Include="assets\img\Huancayo3.jpeg" />
+    <Content Include="assets\img\huayta1.jpg" />
+    <Content Include="assets\img\huayta2.jpg" />
+    <Content Include="assets\img\Huaytapallana2.jpg" />
+    <Content Include="assets\img\Huaytapallana3.jpg" />
+    <Content Include="assets\img\huaytapallana5.jpg" />
+    <Content Include="assets\img\Huyatapayana1.jpg" />
+    <Content Include="assets\img\huytapallana-13.jpeg" />
+    <Content Include="assets\img\identidad.jpeg" />
+    <Content Include="assets\img\imag2.jpg" />
+    <Content Include="assets\img\imag3.jpg" />
+    <Content Include="assets\img\imag4.jpg" />
+    <Content Include="assets\img\imag9.jpg" />
+    <Content Include="assets\img\image1.jpg" />
+    <Content Include="assets\img\image2.jpg" />
+    <Content Include="assets\img\image3.jpg" />
+    <Content Include="assets\img\imagen1.1.jpg" />
+    <Content Include="assets\img\imagen1.2.jpg" />
+    <Content Include="assets\img\imagen3.jpg" />
+    <Content Include="assets\img\imagenselva1.jpg" />
+    <Content Include="assets\img\imagenselva2.jpg" />
+    <Content Include="assets\img\imagenselva3.jpg" />
+    <Content Include="assets\img\imagenselva4.jpg" />
+    <Content Include="assets\img\images1.jpg" />
+    <Content Include="assets\img\images2.jpg" />
+    <Content Include="assets\img\left-arrow.png" />
+    <Content Include="assets\img\portfolio-img6.png" />
+    <Content Include="assets\img\portfolio-img7.png" />
+    <Content Include="assets\img\portfolio-img8.png" />
+    <Content Include="assets\img\quote-icon.png" />
+    <Content Include="assets\img\recent-img1.jpg" />
+    <Content Include="assets\img\recent-img2.jpg" />
+    <Content Include="assets\img\recent-img3.jpg" />
+    <Content Include="assets\img\recent-img4.jpg" />
+    <Content Include="assets\img\right-arrow.png" />
+    <Content Include="assets\img\santuario.2.jpg" />
+    <Content Include="assets\img\selva-central-1.mp4" />
+    <Content Include="assets\img\selva.mp4" />
+    <Content Include="assets\img\selva4.jpg" />
+    <Content Include="assets\img\selva5.jpg" />
+    <Content Include="assets\img\selva6.jpg" />
+    <Content Include="assets\img\selva7.jpg" />
+    <Content Include="assets\img\selva8.jpg" />
+    <Content Include="assets\img\sierra.mp4" />
+    <Content Include="assets\img\twit-girl-img.png" />
+    <Content Include="assets\img\twitter-logo.png" />
+    <Content Include="assets\img\twitter.png" />
+    <Content Include="assets\img\video360.mp4" />
+    <Content Include="assets\img\vista1.jpg" />
+    <Content Include="assets\img\vista2..jpeg" />
+    <Content Include="assets\img\vista2.jpg" />
+    <Content Include="assets\js\bootstrap.bundle.js" />
+    <Content Include="assets\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\jquery-3.3.1.slim.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\popper.min.js" />
+    <Content Include="Hospedaje.aspx" />
+    <Content Include="Paquetes.aspx" />
+    <Content Include="Restaurante.aspx" />
+    <Content Include="Turistas.aspx" />
+    <Content Include="Huaytapallana.html" />
+    <Content Include="index.html" />
+    <Content Include="tour_huancayo.html" />
+    <Content Include="tour_selva.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Hospedaje.aspx.cs">
+      <DependentUpon>Hospedaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospedaje.aspx.designer.cs">
+      <DependentUpon>Hospedaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paquetes.aspx.cs">
+      <DependentUpon>Paquetes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paquetes.aspx.designer.cs">
+      <DependentUpon>Paquetes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurante.aspx.cs">
+      <DependentUpon>Restaurante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restaurante.aspx.designer.cs">
+      <DependentUpon>Restaurante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turistas.aspx.cs">
+      <DependentUpon>Turistas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turistas.aspx.designer.cs">
+      <DependentUpon>Turistas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrap-grid.css.map" />
+    <Content Include="assets\css\bootstrap-grid.min.css.map" />
+    <Content Include="assets\css\bootstrap-reboot.css.map" />
+    <Content Include="assets\css\bootstrap-reboot.min.css.map" />
+    <Content Include="assets\css\bootstrap.css.map" />
+    <Content Include="assets\css\bootstrap.min.css.map" />
+    <Content Include="assets\css\style.css.map" />
+    <Content Include="assets\fonts\Oswald-Bold.ttf" />
+    <Content Include="assets\fonts\PT_Sans-Web-Bold.ttf" />
+    <Content Include="assets\fonts\PT_Sans-Web-Italic.ttf" />
+    <Content Include="assets\fonts\PT_Sans-Web-Regular.ttf" />
+    <Content Include="assets\js\bootstrap.bundle.js.map" />
+    <Content Include="assets\js\bootstrap.bundle.min.js.map" />
+    <Content Include="assets\js\bootstrap.js.map" />
+    <Content Include="assets\js\bootstrap.min.js.map" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64779</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44396/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
